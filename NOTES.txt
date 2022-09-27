@@ -1,0 +1,21 @@
+9. Angular view Layer Patterns - Smart vs Presentational Components
+Presentational component - the only responsability of the component is to display some data that we receive as an input so the component does not know where the data exactly comes from (component that we can reuse)
+
+10. Data Modification Example in Reactive Style (Stateless Application)
+
+14. Reactive Component interaction using Custom Observable and Behavior Subject
+	Differents between subject and observables is subject can emitt values
+	The behavior subject class is a special type of subject that remembers the last value emitted by the subject
+
+19. 
+asObservable is going to create a new observable that emits the same values as the subject with the diff that with the errors observable we cannot emit new values directly we can only subscribe to them.
+
+A Subject can act both as an observer and an observable.
+
+An Obervable has 2 methods.
+
+subscribe
+unsubscribe
+Whenever you subscribe to an observable, you get an observer which has next, error and complete methods on it.
+
+You'd need to hide the sequence because you don't want the stream source to be publicly available in every component.
